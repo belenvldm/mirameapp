@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/themes/mirame.min.css" />
+	<link rel="stylesheet" href="style/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="style/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="style/stylem.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/jquery.mobile-1.4.5.css"> -->
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/function.js"></script>
+	<title>Mirame</title>
+</head>
+<body>
+
+<!-- *.. HOME ..* -->
+<div id="home" data-theme="a" class="home bg ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="content" class="content" data-role="content">
+
+		<div id="reponer" class="reponer con">
+
+			<div id="logo" class="logo"></div>
+			
+			<div id="registrar" class="registrar">
+				<a href="#create">Crear cuenta</a>
+			</div>
+			
+			<div id="iniciar" class="iniciar">
+				<h1>Bienvenido a mirame</h1>
+				<a href="#loguin" id="comenzar" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-corner-all ui-btn-icon-right">Comenzar</a>
+			</div>
+
+			<div id="img_video">
+				<button id="play" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-video ui-btn-icon-notext">video</button>
+				<img src="img/img_vid.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- *!. HOME ..* -->
+
+<!-- *.. MENU ..* -->
+<div id="menu" data-theme="a" class="menu ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1> <a href="#menu" data-icon="bars" id="btn_bars_head" class="ui-btn-icon-left"></a> menu <a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+
+	<div id="content" class="content" data-role="content">
+		<div id="menu_grid" class="ui-grid-a">
+			<div onclick="location.href='#etapas'" id="m_etapas" class="ui-block-a ui-body-a ui-corner-all">
+				<div class="ui-bar ui-bar-a">Etapas</div>
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bullets ui-btn-icon-notext">bullets</button>
+			</div>
+			<div onclick="location.href='#recordatorios'" id="m_recordar" class="ui-block-b ui-body-a ui-corner-all">
+					<div class="ui-bar ui-bar-a">Recordatorios</div>
+					<!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar ui-btn-icon-notext">calendar</button> -->
+					<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-clock ui-btn-icon-notext">clock</button>
+			</div>
+			<div onclick="location.href='#consultas'" id="m_consultas" class="ui-block-a ui-body-a ui-corner-all">
+				<div class="ui-bar ui-bar-a">Consultas</div>
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-comment ui-btn-icon-notext">comment</button>
+			</div>
+			<div onclick="location.href='#settings'" id="m_settings" class="ui-block-b ui-body-a ui-corner-all">
+				<div class="ui-bar ui-bar-a">Configuracion</div>
+				<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-gear ui-btn-icon-notext">gear</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- *!. MENU ..* -->
+
+<!-- *.. CREAR CUENTA ..* -->
+<div id="create" data-theme="a" class="create bg ui-page-theme-a" data-role="page" data-transition="slide">
+	
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1> mirame <a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+	
+	<div id="content" class="content" data-role="content">
+		
+		<h2>Registrate</h2>
+
+		<form id="formcrear">
+			<input type="text" id="namecrear" name="namecrear" placeholder="nombre">
+			
+			<input type="email" id="mailcrear" name="mailcrear" placeholder="mail">
+      		
+      		<input type="password" id="clavecrear" name="clavecrear" placeholder="contraseña">
+      		
+      		<input type="text" id="empresacrear" name="empresacrear" placeholder="empresa">
+     		
+     		<input type="submit" value="Ingresar" id="botonCrear">
+      	</form>		
+	</div>
+</div>
+<!-- *!. CREAR CUENTA ..* -->
+
+<!-- *.. LOGUIN ..* -->
+<div id="loguin" data-theme="a" class="loguin ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1> mirame <a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+
+	<div id="content" class="content" data-role="content">
+				
+		<h2>Iniciar sesion</h2>
+
+		<form id="formulario">
+			<input type="text" id="nombredeusuario" name="nombredeusuario" placeholder="usuario">
+      		
+      		<input type="password" id="clave" name="clave" placeholder="contraseña">
+     		
+     		<input type="submit" value="Ingresar" id="botonLogin">
+
+     		<a href="#" id="olvido" class="olvido">Olvido su contraseña?</a>
+      	</form>
+
+      	<div id="datos_inc" class="datos_inc"></div>
+	</div>
+</div>
+<!-- *!. LOGUIN ..* -->
+
+<!-- *.. RECORDATORIOS ..* -->
+<div id="recordatorios" data-theme="a" class="recordatorios bg ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1 id="rec"><a href="#menu" data-icon="bars" id="btn_bars_head" class="ui-btn-icon-left"></a>recordatorios<a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+	
+	<div id="content" class="content" data-role="content">
+		<div id="lista"></div>
+	</div>
+</div>
+<!-- *!. RECORDATORIOS ..* -->
+
+<!-- *.. ETAPAS ..* -->
+<div id="etapas" data-theme="a" class="etapas bg ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1> <a href="#menu" data-icon="bars" id="btn_bars_head" class="ui-btn-icon-left"></a> etapas <a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+
+	<div id="content" class="content" data-role="content">
+		<div id="aca"></div>
+	</div>
+</div>
+<!-- *!. ETAPAS ..* -->
+
+<!-- *.. CONSULTAS ..* -->
+<div id="consultas" data-theme="a" class="consultas bg ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1> <a href="#menu" data-icon="bars" id="btn_bars_head" class="ui-btn-icon-left"></a> consultas <a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+
+	<div id="content" class="content" data-role="content">
+		<h4>Realizar consulta</h4>
+		<form id="soporte">
+			<input type="text" id="asunto" name="asunto" placeholder="Asunto">
+			<textarea cols="40" rows="8" id="pregunta" name="pregunta" placeholder="Consulta"></textarea>
+
+     		<input type="submit" value="Enviar" id="envioPreg">
+      	</form>
+
+      	<h5>Consultas realizadas</h5>
+      	
+		<ul id="cons" class="cons" data-role="listview"></ul>
+	</div>
+</div>
+<!-- *!. CONSULTAS ..* -->
+
+<!-- *.. SETTINGS ..* -->
+<div id="settings" data-theme="a" class="settings bg ui-page-theme-a" data-role="page" data-transition="slide">
+	<div id="header" class="header ui-page-theme-a" data-role="header" data-position="fixed">
+		<h1> <a href="#menu" data-icon="bars" id="btn_bars_head" class="ui-btn-icon-left"></a> Configuracion <a data-rel="back" data-icon="back" id="btn_back_head" class="ui-btn-icon-right"></a></h1>
+	</div>
+
+	<div id="content" class="content" data-role="content">
+		
+		<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left">Cerrar sesion</a>
+
+		<div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+			<div data-role="header" data-theme="a">
+				<h1>Salir?</h1>
+			</div>
+
+			<div role="main" class="ui-content">
+				<a id="salio" href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b">Si</a>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">No</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- *!. SETTINGS ..* -->
+
+
+
+<!-- <div id="footer" class="footer" data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="menu" data-icon="bars">Summary</a></li>
+				<li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
+				<li><a href="#" data-icon="gear">Setup</a></li>
+			</ul>
+		</div>
+	</div> -->
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+/*.. GENERAL ..*/
+#btn_bars_head:after{background-image:url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M1%2C4h12c0.553%2C0%2C1-0.447%2C1-1s-0.447-1-1-1H1C0.447%2C2%2C0%2C2.447%2C0%2C3S0.447%2C4%2C1%2C4z%20M13%2C6H1%20C0.447%2C6%2C0%2C6.447%2C0%2C7c0%2C0.553%2C0.447%2C1%2C1%2C1h12c0.553%2C0%2C1-0.447%2C1-1C14%2C6.447%2C13.553%2C6%2C13%2C6z%20M13%2C10H1c-0.553%2C0-1%2C0.447-1%2C1%20s0.447%2C1%2C1%2C1h12c0.553%2C0%2C1-0.447%2C1-1S13.553%2C10%2C13%2C10z%22%2F%3E%3C%2Fsvg%3E")
+}
+
+#btn_back_head:after{
+    background-image:url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill%3A%23FFFFFF%3B%22%20d%3D%22M5%2C3V0L1%2C4l4%2C4V5c0%2C0%2C6%2C0%2C6%2C3s-5%2C4-5%2C4v2c0%2C0%2C7-1%2C7-6C13%2C4%2C8%2C3%2C5%2C3z%22%2F%3E%3C%2Fsvg%3E")
+}
+
+/*#content {
+    position: relative;
+    overflow: hidden;
+}
+
+#content:before {
+    content: "";
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../img/img_vid.jpg) no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+    height: 100%;
+}*/
+
+/*!. GENERAL ..*/
+
+/*.. HOME ..*/
+#home #content {
+    padding: 0;
+}
+
+div#img_video {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+div#img_video img {
+    width: 100%;
+}
+
+button#play {
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    width: 18%;
+    height: 10%;
+}
+
+button#play:after {
+    width: 4em;
+    height: 3em;
+    left: 23%;
+    top: 30%;
+    background-size: contain;
+}
+
+video#video {
+    height: 100%;
+    position: fixed;
+}
+
+div.logo {
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+    height: 10em;
+    left: 2em;
+    position: absolute;
+    top: 5em;
+    width: 8em;
+}
+
+div#registrar {
+    position: absolute;
+    right: 6%;
+    top: 4%;
+}
+
+#registrar a {
+    text-shadow: none;
+}
+
+div#iniciar {
+    bottom: 1.5em;
+    color: white;
+    left: 12%;
+    position: absolute;
+}
+
+div#iniciar h1 {
+    margin-bottom: 2%;
+}
+
+a#comenzar {
+    left: 28%;
+}
+/*!. HOME ..*/
+
+/*.. MENU ..*/
+div#menu_grid {
+    margin-top: 40%;
+}
+
+div#menu_grid > div {
+    width: 48%;
+    margin: 0 1% 6%;
+}
+
+div#menu_grid div > button {
+    width: 8em;
+    height: 8em;
+    margin: 6% 0 6% 15.9%;
+}
+
+div#menu_grid div > button:after {
+    background-size: 70%;
+    height: 70%;
+    left: 10%;
+    top: 20%;
+    width: 70%;
+}
+/*!. MENU ..*/
+
+/*.. LOGUIN ..*/
+form#formulario {
+    margin-top: 10%;
+}
+
+form#formulario div {
+    margin-bottom: 4%;
+}
+
+form#formulario div:nth-child(3) {
+    margin: 10% 0 8%;
+}
+/*!. LOGUIN ..*/
+
+/*.. RECORDATORIOS ..*/
+h1#rec {
+    margin: 0 28%;
+}
+
+div#lista {
+    margin-top: 10%;
+}
+
+p#body_red {
+    margin: 0 0 6%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/*!. RECORDATORIOS ..*/
+
+/*.. SOPORTE ..*/
+form#soporte {
+    margin-bottom: 14%;
+}
+
+ul#cons {
+    padding: 0 1.2em;
+}
+
+ul#cons li {
+    background-color: transparent;
+    border: none;
+    margin:0;
+    padding:0;
+}
+
+ul#cons li textarea {
+    width: 90%;
+    padding: .6em .8em;
+    text-shadow: none;
+}
+
+ul#cons li textarea.body_res {
+    background: #e4d4fc;
+    margin-left: 10%;
+    text-align: right;
+}
+
+ul#cons li textarea.body_preg {
+    background: #BB9AED;
+    margin-right: 10%;
+}
+/*!. SOPORTE ..*/
+
