@@ -182,5 +182,5 @@ $(document).ready(function(){
     $('#popupDialog #salio').click(function() {
         localStorage.clear();
         $.mobile.changePage("#home");
-    })
+    });
 });
