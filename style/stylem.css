@@ -109,9 +109,9 @@ div#menu_grid > div {
 }
 
 div#menu_grid div > button {
-    width: 8em;
-    height: 8em;
-    margin: 6% 0 6% 15.9%;
+    width: 7em;
+    height: 7em;
+    margin: 6% 0 6% 14%;
 }
 
 div#menu_grid div > button:after {
