@@ -24,8 +24,7 @@ $(document).ready(function(){
             }
 
             if(respuestaServer.validacion == "ok"){
-                // $.mobile.changePage("#recordatorios");
-                $.mobile.loadPage( "#recordatorios", reloadPage:true);
+                $.mobile.changePage("#recordatorios");
             }else{
                 $('#datos_inc').append(respuestaServer.mensaje)
             }
