@@ -148,6 +148,10 @@ $(document).ready(function(){
         });
     }
 
+    $('#popupDialog #ok').click(function() {
+        $.mobile.changePage("#recordatorios");
+    })
+
     // CREAR USUARIO
     $('#formcrear').submit(function() {
         // recolecta los valores que inserto el usuario
@@ -170,5 +174,11 @@ $(document).ready(function(){
             }
         })
         return false;
-    });    
+    });
+
+    // CERRAR LA SESION
+    $('#popupDialog #salio').click(function() {
+        localStorage.clear();
+        $.mobile.changePage("#home");
+    })
 });
