@@ -105,8 +105,14 @@ $(document).ready(function(){
 
         $("#asunto").val("");
         $("#pregunta").val("");
+
+        $('#popupDialog').show();
         
         return false;
+    });
+
+    $('#popupDialog #ok').click(function() {
+        $.mobile.changePage("#recordatorios");
     });
 
 
@@ -147,10 +153,6 @@ $(document).ready(function(){
             }
         });
     }
-
-    $('#popupDialog #ok').click(function() {
-        $.mobile.changePage("#recordatorios");
-    })
 
     // CREAR USUARIO
     $('#formcrear').submit(function() {
